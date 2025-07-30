@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: white;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #181818;
+  padding: 15px 20px;
+  color: white;
+}
+
+.nav-center {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.item1 {
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.item1.active {
+  opacity: 1;
+  border-bottom: 2px solid #1db954;
+  padding-bottom: 2px;
+}
+
+.spotify-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border-bottom: 2px solid #333;
+}
+
+.item2 {
+  font-size: 14px;
+  cursor: pointer;
+  opacity: 0.7;
+  padding-bottom: 2px;
+  margin-bottom: 2px;
+}
+
+.item2.active {
+  opacity: 1;
+  font-weight: bold;
+  color: #1db954;
+  border-bottom: 3px solid #1db954;
+  padding-bottom: 2px;
+  margin-bottom: 2px;
+}
+
+.page {
+  display: flex;
+  height: 92vh;
+}
+
+.page-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+}
+
+.card {
+  background-color: #8c4b2f;
+  padding: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.artist-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 30px;
+}
+
+.info h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.label {
+  font-size: 12px;
+  opacity: 0.8;
+  letter-spacing: 1px;
+}
+
+.listen {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.spotify-logo {
+  height: 14px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.page-right {
+  width: 280px;
+  background-color: #1e1e1e;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.btns {
+  display: flex;
+  gap: 8px;
+  margin-left: 20px;
+}
+
+.btn {
+  background-color: #2a2a2a;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 12px;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.btn.active {
+  background-color: #696868;
+}
+
+.search-box {
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 50px;
+  width: 90%;
+  font-size: 16px;
+}
+
+.artist-list {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.artist-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.artist-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.artist-item.selected {
+  background-color: #333;
+  padding: 5px;
+  border-radius: 6px;
+}
+
+.customize-btn {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #1db954;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
